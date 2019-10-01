@@ -1,0 +1,24 @@
+Instructions:
+
+1. Create a shell script `on_reboot.sh` (or whatever you want to call it) which should contain instructions for:
+
+	i) Indicating to the OS which interpreter to use:
+
+		-> `#!/bin/bash`
+
+	ii) activating the virtual environment (if required):
+
+		-> source `which virtualenvwrapper.sh`
+		-> workon py3cv3
+
+	iii) switching to the directory where the script is located:
+
+		-> cd /home/pi/
+	
+	iv) executing the script (save_frames.py for this example):
+
+		-> python save_frames.py --output output --display 1
+
+2. Edit `/etc/xdg/lxsession/LXDE-pi/autostart` (for raspbian 9.6 or higher) or `/home/pi/.config/lxsession/LXDE-pi/autostart` (for raspbian 9.4) and add the following line: `@/home/pi/RPi4CV/Hobbyist_Code/chapter08-automatically_starting_scripts/on_reboot.sh`. To check your raspbian version use the command `lsb_release -a`
+
+3. Reboot.
