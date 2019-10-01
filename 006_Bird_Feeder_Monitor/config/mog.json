@@ -1,0 +1,38 @@
+{
+	// Should PiCamera Be Used
+	"picamera": false,
+
+	// Background Subtractor
+	// Valid Values: CNT, GMG, MOG, GSOC, LSBP
+	"bg_sub": "MOG",
+
+	// MxN-Size And Number Of Iterations Of Erosion Kernel
+	"erode": {"kernel": [3, 3], "iterations": 1},
+
+	// MxN-Size And Number Of Iterations Of Dilation Kernel
+	"dilate": {"kernel": [5, 5], "iterations": 2},
+
+	// Minimum PXs Required For Valid Foreground (Motion) Blob
+	"min_radius": 80,
+
+	// Key Clips Before/Affer Buffer And Codec
+	"keyclipwriter_buffersize": 50,
+	"codec": "MJPG",
+
+	// Should Snapshots Be Written; And, If So, How Many Frames
+	// Between Snapshots
+	"write_snaps": true,
+	"frames_between_snaps": 30,
+
+	// Should Boxes And Circles Be Annotated For Display?
+	"annotate": true,
+
+	// Should Video Be Displayed?
+	"display": true,
+
+	// Path To Which Output Files Will Be Written
+	"output_path": "output_mog",
+
+	// FPS For Output Video
+	"fps": 20
+}
