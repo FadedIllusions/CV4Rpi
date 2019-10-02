@@ -1,0 +1,18 @@
+{
+	// Threshold For Detecting If Mailbox Is Open
+	// Threshold For Number Of Seconds Open
+	"thresh": 10,
+	"open_threshold_seconds": 60,
+	
+	// Flag Used To Indicate If Frames Must Be Displayed
+	"display": true,
+	
+	// Variables To Store Your Twilio Account Credentials
+	"twilio_sid": "YOUR_TWILIO_SID",
+	"twilio_auth": "YOUR_TWILIO_AUTH_ID",
+	"twilio_to": "YOUR_PHONE_NUMBER",
+	"twilio_from": "YOUR_TWILIO_PHONE_NUMBER",
+
+	// Mailbox Address
+	"address_id": "YOUR_ADDRESS"
+}
