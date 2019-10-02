@@ -1,0 +1,7 @@
+{
+	// Variables To Store Your Twilio Account Credentials
+	"twilio_sid": "YOUR_TWILIO_SID",
+	"twilio_auth": "YOUR_TWILIO_AUTH_ID",
+	"twilio_to": "YOUR_PHONE_NUMBER",
+	"twilio_from": "YOUR_TWILIO_PHONE_NUMBER"
+}
